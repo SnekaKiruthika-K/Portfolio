@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      text-align: center;
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+    }
+
+    .internship-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* Force 3 items per row */
+      gap: 40px;
+      padding: 40px;
+      justify-items: center;
+    }
+
+    .container-img {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.3s ease;
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .container-img:hover {
+      transform: translateY(-5px);
+    }
+
+    .container-img img {
+      width: 100%;
+      height: 220px;
+      border-radius: 1rem;
+      transition: transform 1.2s;
+      object-fit: cover;
+    }
+
+    .captions {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      border-radius: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .container-img:hover .captions {
+      opacity: 1;
+    }
+
+    .container-img h2 {
+      margin-top: 10px;
+      font-size: 1rem;
+      text-align: center;
+      color: #333;
+    }
+
+    /* Responsive for mobile devices */
+    @media (max-width: 900px) {
+      .internship-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .internship-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container-img img {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section id="internship" class="internship-section">
+    <h1>Internship Section</h1>
+    <div class="internship-grid">
+      <div class="container-img">
+        <img src="Mahat labs.jpg" alt="mahat" />
+        <div class="captions">
+          <p>
+            Created a login form for a restaurant login page using PostgreSQL.
+            I also learned about shadow projects and creative projects.
+          </p>
+        </div>
+        <h2>MAHAT LABS <br /> NO CODE LOW CODE TECHNOLOGY</h2>
+      </div>
+
+      <div class="container-img">
+        <img src="meriskill.jpg" alt="meriskill" />
+        <div class="captions">
+          <p>
+            Used PowerBI for chart creation of the first dataset and Excel pivot table for another dataset.
+          </p>
+        </div>
+        <h2>MERISKILL <br /> DATA ANALYSIS</h2>
+      </div>
+
+      <div class="container-img">
+        <img src="Cipherbyte Technologies.jpg" alt="Cipher Technologies" />
+        <div class="captions">
+          <p>
+            Gained hands-on experience in full-stack development by building a responsive Movie Booking Application.
+            Developed a Weather Application, enhancing real-time data handling skills.
+          </p>
+        </div>
+        <h2>CIPHERBYTE TECHNOLOGY<br /> WEB DEVELOPER</h2>
+      </div>
+
+      <div class="container-img">
+        <img src="Pro.jpg" alt="prodiology" />
+        <div class="captions">
+          <p>
+            Built dynamic, responsive web applications at Prodigy Technologies,
+            focusing on front-end development and user experience enhancement.
+          </p>
+        </div>
+        <h2>PRODIOLOGY <br /> WEB DEVELOPER</h2>
+      </div>
+
+      <div class="container-img">
+        <img src="edu.jpg" alt="technoeduhacks" />
+        <div class="captions">
+          <p>
+            Performed EDA during a Data Analyst internship, leveraging Python libraries
+            like Pandas, Matplotlib, and Seaborn for data cleaning, visualization,
+            and insight generation.
+          </p>
+        </div>
+        <h2>TECHNO EDUHACKS <br /> DATA ANALYST</h2>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
